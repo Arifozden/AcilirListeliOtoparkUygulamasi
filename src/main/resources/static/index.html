@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+  <script src="index.js"></script>
+    <meta charset="UTF-8">
+    <title>Kardesler Otopark</title>
+</head>
+<body>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <h1>Otopark Kayit</h1>
+      <form class="form">
+
+        <div class="form-group"> <label for="tc">TC</label>
+          <input type="text" class="form-control" id="tc"></div>
+        <div class="form-group"><label for="isim">Isim</label>
+          <input type="text" class="form-control" id="isim"></div>
+        <div class="form-group"><label for="soyisim">Soyisim</label>
+          <input type="text" class="form-control" id="soyisim"></div>
+        <div class="form-group"><label for="adres">Adres</label>
+          <input type="text" class="form-control" id="adres"></div>
+        <div class="form-group"><label for="plaka">Plaka</label>
+          <input type="text" class="form-control" id="plaka"></div>
+        <div class="form-group"><label for="marka">Marka</label>
+          <div id="marka" class="dropdown"> </div></div>
+        <div class="form-group"><label for="model">Model</label>
+          <div id="model" class="dropdown"></div></div>
+        <div class="form-group"><label for="yil">Yil</label>
+          <input type="text" class="form-control" id="yil"></div>
+      </form>
+      <br>
+
+      <button class="btn btn-primary" onclick="kayit()">Kaydet</button></div>
+    <br><div class="col-md-8">
+    Tum kayitlar: <br>
+    <div id="musteriler" class="table-responsive"></div>
+    <br><br>
+    <button class="btn btn-danger" onclick="hepsiniSil()">Tum kayitlari sil</button>
+  </div>
+  </div>
+</div>
+</body>
+</html>
